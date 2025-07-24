@@ -1,0 +1,92 @@
+{
+  "nodes": {
+    "ck5-demo": {
+      "name": "ck5-demo",
+      "type": "app",
+      "data": {
+        "root": "apps/ck5-demo",
+        "name": "ck5-demo",
+        "sourceRoot": "apps/ck5-demo/src",
+        "projectType": "application",
+        "targets": {
+          "serve": {
+            "executor": "@nx/vite:dev-server",
+            "options": {
+              "configFile": "apps/ck5-demo/vite.config.ts",
+              "buildTarget": "ck5-demo:build"
+            },
+            "configurations": {},
+            "parallelism": true,
+            "continuous": true
+          },
+          "build": {
+            "executor": "@nx/vite:build",
+            "options": {
+              "configFile": "apps/ck5-demo/vite.config.ts"
+            },
+            "configurations": {},
+            "parallelism": true
+          }
+        },
+        "implicitDependencies": [],
+        "tags": []
+      }
+    },
+    "react-playground": {
+      "name": "react-playground",
+      "type": "lib",
+      "data": {
+        "root": ".",
+        "name": "react-playground",
+        "tags": [
+          "npm:public"
+        ],
+        "metadata": {
+          "targetGroups": {
+            "NPM Scripts": [
+              "test"
+            ]
+          },
+          "description": "",
+          "js": {
+            "packageName": "react-playground",
+            "packageMain": "index.js",
+            "isInPackageManagerWorkspaces": true
+          }
+        },
+        "targets": {
+          "test": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "test"
+            },
+            "metadata": {
+              "scriptContent": "echo \"Error: no test specified\" && exit 1",
+              "runCommand": "pnpm run test"
+            },
+            "configurations": {},
+            "parallelism": true
+          },
+          "nx-release-publish": {
+            "executor": "@nx/js:release-publish",
+            "dependsOn": [
+              "^nx-release-publish"
+            ],
+            "options": {},
+            "configurations": {},
+            "parallelism": true
+          }
+        },
+        "implicitDependencies": []
+      }
+    }
+  },
+  "externalNodes": {},
+  "dependencies": {
+    "ck5-demo": [],
+    "react-playground": []
+  },
+  "version": "6.0",
+  "errors": [],
+  "computedAt": 1753324890303
+}

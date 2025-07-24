@@ -1,0 +1,21 @@
+{
+  "name": "ck5-demo",
+  "root": "apps/ck5-demo",
+  "sourceRoot": "apps/ck5-demo/src",
+  "projectType": "application",
+  "targets": {
+    "serve": {
+      "executor": "@nx/vite:dev-server",
+      "options": {
+        "configFile": "apps/ck5-demo/vite.config.ts",
+        "buildTarget": "ck5-demo:build"
+      }
+    },
+    "build": {
+      "executor": "@nx/vite:build",
+      "options": {
+        "configFile": "apps/ck5-demo/vite.config.ts"
+      }
+    }
+  }
+} 

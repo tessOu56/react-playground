@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ck-editor__editable_inline {
+    min-height: 200px;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    background: white;
+}
+
+.ck.ck-toolbar {
+    border: 1px solid #ccc;
+    border-bottom: none;
+    background: #f8f9fa;
+}
+
+.ck.ck-editor__main {
+    border: 1px solid #ccc;
+    border-top: none;
+}

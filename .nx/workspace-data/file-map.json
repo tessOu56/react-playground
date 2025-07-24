@@ -1,0 +1,103 @@
+{
+  "version": "6.0",
+  "nxVersion": "21.3.2",
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "nonProjectFiles": [],
+    "projectFileMap": {
+      "ck5-demo": [
+        {
+          "file": "apps/ck5-demo/.gitignore",
+          "hash": "9696238922644995912"
+        },
+        {
+          "file": "apps/ck5-demo/README.md",
+          "hash": "5860947089398343291"
+        },
+        {
+          "file": "apps/ck5-demo/index.html",
+          "hash": "10460222253617156982"
+        },
+        {
+          "file": "apps/ck5-demo/project.json",
+          "hash": "1953784789739023344"
+        },
+        {
+          "file": "apps/ck5-demo/src/App.tsx",
+          "hash": "17291372979163266351",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/ck5-demo/src/index.css",
+          "hash": "18292240645392260956"
+        },
+        {
+          "file": "apps/ck5-demo/src/main.tsx",
+          "hash": "14612961849515612161",
+          "deps": [
+            "npm:react",
+            "npm:react-dom"
+          ]
+        },
+        {
+          "file": "apps/ck5-demo/tsconfig.json",
+          "hash": "1847437151929358625"
+        },
+        {
+          "file": "apps/ck5-demo/tsconfig.node.json",
+          "hash": "6630198335852407767"
+        },
+        {
+          "file": "apps/ck5-demo/vite.config.ts",
+          "hash": "10465825096042683511",
+          "deps": [
+            "npm:vite",
+            "npm:@vitejs/plugin-react"
+          ]
+        }
+      ],
+      "react-playground": [
+        {
+          "file": ".gitignore",
+          "hash": "13303226010000006553"
+        },
+        {
+          "file": "nx.json",
+          "hash": "18336426213955174907"
+        },
+        {
+          "file": "package.json",
+          "hash": "5026800472918815813",
+          "deps": [
+            "npm:@nx/react",
+            "npm:@nx/vite",
+            "npm:@vitejs/plugin-react",
+            "npm:autoprefixer",
+            "npm:nx",
+            "npm:postcss",
+            "npm:tailwindcss",
+            "npm:typescript",
+            "npm:vite",
+            "npm:react",
+            "npm:react-dom"
+          ]
+        },
+        {
+          "file": "postcss.config.js",
+          "hash": "1468484466662653169"
+        },
+        {
+          "file": "tailwind.config.js",
+          "hash": "1230699901399577581"
+        },
+        {
+          "file": "tsconfig.base.json",
+          "hash": "18166972413500341687"
+        }
+      ]
+    }
+  }
+}
